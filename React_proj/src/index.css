@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+
+:is(select, input, textarea):focus {
+  outline-color: #ccc;
+  outline-width: 1px;
+  outline-style: solid;
+}
+:is(select, input, textarea) {
+  padding: 0 10px;
+  height: 40px;
+}
