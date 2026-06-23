@@ -63,16 +63,16 @@ const Services = () => {
               adipiscing. Leo odio tincidunt ipsum magna lacus viverra
               tincidunt.
             </span>
-            <div className="flex justify-between flex-wrap mt-5 p-5 shadow-md rounded-lg w-full">
+            <div className="flex flex-wrap mt-5 p-4 shadow-md rounded-lg w-fit gap-4 items-center">
               <div className="text-[#0C6967] font-bold text-[18px]">
                 Scan the QR code
                 <p className="text-[#6B788E] text-[12px] font-normal">
                   You can also check about the service
                 </p>
               </div>
-              <div className="flex justify-center lg:mt-0 mt-5">
+              <div className="flex justify-center  md:mt-0 mt-5">
                 <img
-                  className="h-[105px] object-contain"
+                  className="h-16 w-16 "
                   src="/QR.png"
                   alt="Qr"
                 />
@@ -97,16 +97,16 @@ const Services = () => {
               adipiscing. Leo odio tincidunt ipsum magna lacus viverra
               tincidunt.
             </span>
-            <div className="flex justify-between flex-wrap mt-5 p-5 shadow-md rounded-lg w-full">
+            <div className="flex flex-wrap mt-5 p-4 shadow-md rounded-lg w-fit gap-4 items-center">
               <div className="text-[#0C6967] font-bold text-[18px]">
                 Scan the QR code
                 <p className="text-[#6B788E] text-[12px] font-normal">
                   You can also check about the service
                 </p>
               </div>
-              <div className="flex justify-center lg:mt-0 mt-5">
+              <div className="flex justify-center md:mt-0 mt-5">
                 <img
-                  className="h-[105px] object-contain"
+                  className="h-16 w-16"
                   src="/QR.png"
                   alt="Qr"
                 />
