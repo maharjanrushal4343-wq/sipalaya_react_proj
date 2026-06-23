@@ -107,22 +107,22 @@ const Home = () => {
         </div>
         <div className="relative lg:block hidden">
           <img
-            className="h-220 absolute right-0 -top-20"
+            className="h-220 absolute right-0 -top-20 object-contain"
             src="circle.png"
             alt="circle"
           />
           <img
-            className="absolute top-40 left-30 w-155.5 h-108.5 z-20"
+            className="absolute top-40 left-30 w-155.5 h-108.5 z-20 object-contain"
             src="home_momo.png"
             alt="home-momo"
           />
           <img
-            className="h-38 w-44 absolute top-33 left-22"
+            className="h-38 w-44 absolute top-33 left-22 object-contain"
             src="black_dot.png"
             alt="black-dot"
           />
           <img
-            className="h-38 w-44 right-14 bottom-46 absolute"
+            className="h-38 w-44 right-14 bottom-46 absolute object-contain"
             src="white_dot.png"
             alt="white-dot"
           />
@@ -248,36 +248,28 @@ const Home = () => {
           <span className="text-[#D95103] me-2">We Offer People</span>
           <span>The Service They Want</span>
         </div>
-        <div className="relative">
-          <img
-            className="h-190 w-full object-cover"
-            src="video-bg.png"
-            alt="video-bg"
-          />
-          <div className="absolute inset-0 bg-black opacity-25"></div>
-          <div className="flex justify-center items-center">
-            <div className="absolute top-[32%]">
-              <div className="text-center">
-                <div className="text-white md:text-[49px] text-2xl font-bold">
-                  Process behind the making
-                </div>
-                <div className="text-white md:text-[25px] text-xl ">
-                  See how our chefs cook only the best momos
-                </div>
-              </div>
-              <div className="flex justify-center items-center">
-                <button className="bg-[#0C6967] hover:bg-[#094f4e] rounded-full py-5 px-10 text-white flex items-center mt-14 gap-2 cursor-pointer">
-                  <img
-                    className="w-8 h-8"
-                    src="video-icon.png"
-                    alt="video-icon"
-                  />{" "}
-                  Watch the Video
-                </button>
-              </div>
+
+        <div
+          className="relative h-190 w-full bg-cover bg-center flex flex-col justify-center items-center"
+          style={{ backgroundImage: "url('video-bg.png')" }}
+        >
+          <div className="absolute inset-0 bg-black opacity-25 z-0"></div>
+
+          <div className="relative z-10 text-center flex flex-col items-center">
+            <div className="text-white md:text-[49px] text-2xl font-bold">
+              Process behind the making
             </div>
+            <div className="text-white md:text-[25px] text-xl mt-2">
+              See how our chefs cook only the best momos
+            </div>
+
+            <button className="bg-[#0C6967] hover:bg-[#094f4e] rounded-full py-5 px-10 text-white flex items-center mt-14 gap-2 cursor-pointer transition-colors">
+              <img className="w-8 h-8" src="video-icon.png" alt="video-icon" />{" "}
+              Watch the Video
+            </button>
           </div>
         </div>
+
         <div className="md:p-20 py-10 px-5">
           <div className="flex justify-center items-center gap-20 flex-wrap">
             <div className="flex flex-col items-center">
@@ -321,7 +313,7 @@ const Home = () => {
 
       <section className="lg:py-15 lg:px-25 md:py-10 md:px-10 py-8 px-5">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-45 gap-20 justify-center items-center">
-          <div className="flex flex-col items-center lg:items-start">
+          <div className="flex flex-col text-center lg:text-start items-center lg:items-start">
             <h3 className="text-[39px] font-bold text-[#101828]">
               200+
               <span className="text-[#D95103]"> Happy Customers</span>
@@ -476,13 +468,13 @@ const Home = () => {
                 </div>
               </div>
               <div className="mt-4">
-                <label htmlFor="message">Email</label>
+                <label htmlFor="message">Message</label>
                 <div>
                   <textarea
                     id="message"
                     name="message"
                     type="text"
-                    rows={"6"}
+                    rows={6}
                     className="rounded-lg border border-[#DFE2E6] w-full"
                   />
                 </div>

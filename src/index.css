@@ -6,7 +6,7 @@
   outline-width: 1px;
   outline-style: solid;
 }
-:is(select, input, textarea) {
+:is(select, input) {
   padding: 0 10px;
   height: 40px;
 }

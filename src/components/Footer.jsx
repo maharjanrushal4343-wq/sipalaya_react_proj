@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <footer className="lg:px-30 px-8 py-14 bg-[#eeeeee]">
       <div className="grid md:grid-cols-2 grid-cols-1 md:gap-0 gap-10 justify-center">
-        <div className="flex flex-col lg:px-30 md:px-10">
+        <div className="flex flex-col lg:px-20 md:px-10">
           <div className="flex items-center gap-2 cursor-pointer py-4">
             <img className="w-9 h-9" src="/logo.png" alt="logo" />
             <h5 className="font-bold text-[#0C6967] text-[20px]">momos</h5>
@@ -29,7 +29,7 @@ const Footer = () => {
             quisquam facere accusamus.
           </p>
         </div>
-        <div className="flex gap-24 flex-wrap lg:justify-center">
+        <div className="flex gap-18 flex-wrap lg:justify-center">
           <div className="flex flex-col gap-1 text-[#6B788E]">
             <h5 className="font-bold text-[#0C6967] text-[18px] py-4">momos</h5>
             <NavLink to={"/about"} className={linkClass}>

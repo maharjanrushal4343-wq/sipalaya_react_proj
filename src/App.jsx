@@ -1,6 +1,7 @@
 import AppRoutes from "./AppRoutes";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Navbar />
       <AppRoutes />
       <Footer />
+      <ScrollToTop />
     </>
   );
 };

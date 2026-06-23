@@ -66,7 +66,7 @@ const Navbar = () => {
             <AiFillTikTok className={iconClass} />
             <FaInstagramSquare className={iconClass} />
           </div>
-          <NavLink className="px-5.5 py-3 rounded-full text-white bg-[#D95103] text-[14px] flex items-center hover:bg-amber-700 cursor-pointer transition-colors">
+          <NavLink to={"/contact"} className="px-5.5 py-3 rounded-full text-white bg-[#D95103] text-[14px] flex items-center hover:bg-amber-700 cursor-pointer transition-colors">
             Contact us
           </NavLink>
           <NavLink to={"/cart"} className={"relative"}>
@@ -120,7 +120,7 @@ const Navbar = () => {
               <FaFacebook className={iconClass} />
               <AiFillTikTok className={iconClass} />
               <FaInstagramSquare className={iconClass} />
-              <NavLink to={"/cart"} className={"relative"}>
+              <NavLink onClick={() => setIsOpen(false)} to={"/cart"} className={"relative"}>
                 <IoCartOutline className="h-7 w-7 text-black hover:text-amber-700 cursor-pointer transition-colors" />
                 {order.length > 0 && (
                   <span className="px-2 py-1 text-[8px] bg-red-600 text-white rounded-full absolute -top-2 -right-2">
@@ -129,7 +129,7 @@ const Navbar = () => {
                 )}
               </NavLink>
             </div>
-            <NavLink className="w-full justify-center px-5.5 py-3 rounded-full text-white bg-[#D95103] text-[14px] flex items-center hover:bg-amber-700 cursor-pointer transition-colors">
+            <NavLink onClick={() => setIsOpen(false)} to={"/contact"} className="w-full justify-center px-5.5 py-3 rounded-full text-white bg-[#D95103] text-[14px] flex items-center hover:bg-amber-700 cursor-pointer transition-colors">
               Contact us
             </NavLink>
           </div>
