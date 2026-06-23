@@ -15,7 +15,7 @@ const Footer = () => {
       isActive ? "text-amber-600" : "text-[#6B788E] hover:text-amber-600"
     }`;
   return (
-    <footer className="lg:px-30 px-8 py-14 bg-[#eeeeee]">
+    <footer className="lg:px-30 px-8 py-14 bg-[#eeeeee] container-fluid  mx-auto">
       <div className="grid md:grid-cols-2 grid-cols-1 md:gap-0 gap-10 justify-center">
         <div className="flex flex-col lg:px-20 md:px-10">
           <div className="flex items-center gap-2 cursor-pointer py-4">
